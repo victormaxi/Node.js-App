@@ -10,7 +10,7 @@ router.get('/login', (req, res) => res.send('Login'));
 router.get('/register', (req, res) => res.send('Register'));
 
 //Register Handle
-route.post('/register', (req, res) => {
+router.post('/register', (req, res) => {
     const { name, email, password, password2 } = req.body;
     let errors = [];
 
